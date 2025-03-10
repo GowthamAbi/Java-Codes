@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        int n = sc.nextInt();
         Solution solution=new Solution();
 
          /* Question:1
@@ -17,11 +18,15 @@ public class Main {
             System.out.println("false");
         }*/
 
-        /* Question:2 */
+        /* Question:2
         String a=sc.nextLine();
         String b=sc.nextLine();
         int getLastDigit= solution.getLastDigit(a,b);
-        System.out.println(getLastDigit);
+        System.out.println(getLastDigit);*/
+
+        //System.out.println(solution.evenlyDivides(n));
+
+        System.out.println(solution.reverseDigits(n));
 
     }
 }

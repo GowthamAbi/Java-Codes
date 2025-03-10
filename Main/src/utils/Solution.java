@@ -1,5 +1,7 @@
 package utils;
 
+import java.util.HashSet;
+
 public class Solution {
     /*
     Question:1
@@ -10,7 +12,7 @@ public class Solution {
             return false;
     }*/
 
-    /* Question:2 */
+    /* Question:2
     public int getLastDigit(String a, String b) {
     int lastdigit=a.charAt(a.length()-1)-'0';
 
@@ -29,5 +31,43 @@ public class Solution {
     result=(int)Math.pow(lastdigit,mod4)%10;
     return result;
 
+    } */
+
+/*public static  int evenlyDivides(int n) {
+   int count = 0;
+
+
+    if(n==0) return 0;
+
+    int temp=n;
+    while(temp>0)
+    {
+        int digit=temp%10;
+        if(digit !=0&&n%digit==0)
+        {
+            count++;
+        }
+        temp=temp/10;
     }
+    return count;
+}*/
+
+    public int reverseDigits(int n)
+    {
+        if(n==0) return 0;
+
+        StringBuilder s=new StringBuilder();
+
+        while (n>0)
+        {
+            int d=n%10;
+            if(d!=0)
+            {
+                s.append(d);
+            }
+            n=n/10;
+        }
+        return Integer.parseInt(s.toString());
+    }
+
 }
