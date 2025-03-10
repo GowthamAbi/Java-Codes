@@ -12,12 +12,22 @@ public class Solution {
 
     /* Question:2 */
     public int getLastDigit(String a, String b) {
-       int num1=Integer.parseInt(a);
-       int num2=Integer.parseInt(b);
-       int result=0;
-       double p=0;
-        p=Math.pow(num1,num2);
-        result=(int) p%10;
-        return result;
+    int lastdigit=a.charAt(a.length()-1)-'0';
+
+    if(b.equals("0")) return 1;
+
+    int mod4=0;
+
+    for(char digit:b.toCharArray())
+    {
+        mod4=(mod4*10+(digit-'0'))%4;
+    }
+
+    if(mod4==0) mod4=4;
+
+    int result=0;
+    result=(int)Math.pow(lastdigit,mod4)%10;
+    return result;
+
     }
 }
