@@ -1,10 +1,17 @@
 package utils;
 
 public class Solution {
-    public void check(int n) {
+    /*
+    Question:1
+    public boolean isEven(int n) {
         if (n % 2 == 0)
-            System.out.println(n + " is Even");
+            return true;
         else
-            System.out.println(n + " is Odd");
+            return false;
+    }*/
+
+    /* Question:2 */
+    public int getLastDigit(String a, String b) {
+        return 1;
     }
 }
