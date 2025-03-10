@@ -1,10 +1,10 @@
 import java.util.*;
-import utils.Odd_Even;
+import utils.Solution;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n=sc.nextInt();
-        Odd_Even obj = new Odd_Even();
-        obj.check(n);
+        Solution solution=new Solution();
+        solution.check(n);
     }
 }
