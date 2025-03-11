@@ -50,15 +50,31 @@ public class Main {
             System.out.println("false");
         }*/
 
-        if(solution.armstrongNumber(n))
+       /* if(solution.armstrongNumber(n))
         {
             System.out.println("true");
         }
         else
         {
             System.out.println("false");
+        }*/
+
+        /*if(solution.isPalindrome(n))
+        {
+            System.out.println("true");
+        }else
+        {
+            System.out.println("false");
+        }*/
+
+       // System.out.println(solution.floorSqrt(n));
+
+        if(solution.isPerfectNumber(n))
+        {
+            System.out.println("true");
+        }else
+        {
+            System.out.println("false");
         }
-
-
     }
 }

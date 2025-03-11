@@ -133,5 +133,40 @@ public class Solution {
     return false;
 }*/
 
+   /* public boolean isPalindrome(int n)
+       {
+           StringBuilder s=new StringBuilder();
+           int temp=n;
+           while (n>0)
+            {
+                int d=n%10;
+                   s.append(d);
+               n=n/10;
+            }
+          int rev=Integer.parseInt(s.toString());
+           return rev==temp;
+       }*/
 
+   /* public int floorSqrt(int n) {
+        int sqt=0;
+        sqt=(int)Math.floor(Math.sqrt(n));
+        return sqt;
+    }*/
+
+    public boolean isPerfectNumber(int num) {
+
+        int sum=0;
+
+        for(int i=1;i<num;i++)
+        {
+            if(num%i==0)
+            {
+
+                sum+=i;
+            }
+        }
+
+
+        return sum==num;
+    }
 }
