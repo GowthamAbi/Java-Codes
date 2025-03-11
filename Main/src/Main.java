@@ -5,6 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
+       // int b = sc.nextInt();
         Solution solution=new Solution();
 
          /* Question:1
@@ -26,7 +27,38 @@ public class Main {
 
         //System.out.println(solution.evenlyDivides(n));
 
-        System.out.println(solution.reverseDigits(n));
+       // System.out.println(solution.reverseDigits(n));
+
+       // System.out.println(solution.gcd(a,b));
+
+        /*List<Integer>divisor=solution.printDivisor(n);
+
+    for(int i=0;i<divisor.size();i++)
+    {
+        System.out.print(divisor.get(i));
+        if(i<divisor.size()-1)
+        {
+            System.out.print(" ");
+        }
+    }*/
+
+       /* if(solution.isPrime(n))
+        {
+            System.out.println("true");
+        }
+        else {
+            System.out.println("false");
+        }*/
+
+        if(solution.armstrongNumber(n))
+        {
+            System.out.println("true");
+        }
+        else
+        {
+            System.out.println("false");
+        }
+
 
     }
 }
